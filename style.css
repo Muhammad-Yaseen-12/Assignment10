@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    background-color: #3b5998;
+    color: white;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.face {
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 20%;
+}
+
+.tabl {
+    color: white;
+    position: absolute;
+    top: 15%;
+    right: 100px;
+    font-size: smaller;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+    padding-top: 65px;
+}
+
+.none {
+    list-style: none;
+    padding: 30px;
+    line-height: 3.5;
+}
+
+.right {
+    padding: 20px;
+    flex: 1;
+}
+
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right form input[type="text"],
+.right form input[type="email"],
+.right form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.right form input[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.right form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.right form .radio-group {
+    align-items: center;
+    margin: 5px 0px;
+    display: flex;
+}
+
+.right form .radio-group input {
+    margin: 0 5px 0 0;
+}
+
+.right form .radio-group label {
+    margin-right: 15px;
+}
+
+.right .terms {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #777;
+    text-decoration: none;
+}
+
+.size {
+    font-size: 32px;
+}
+
+table tr td label {
+    font-size: small;
+}
+
+.tbl {
+    display: flex;
+    gap: 10px;
+}
+
+.ga {
+    width: 104.6%;
+}
+
+div table tr td a {
+    font-size: smaller;
+}
+
+.nor {
+    width: 104.3%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    font-size: 12px;
+    margin: 10px 0;
+    flex: 1px;
+    text-decoration: none;
+}
+
+.aaa1 {
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left,
+    .right {
+        padding: 10px;
+        flex: 1 1 100%;
+    }
+
+    .face,
+    .tabl {
+        position: static;
+        text-align: center;
+    }
+
+    .right form input[type="submit"] {
+        width: 100%;
+    }
+
+    .tbl {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left,
+    .right {
+        padding: 15px;
+        flex: 1 1 100%;
+    }
+
+    .face,
+    .tabl {
+        position: static;
+        text-align: center;
+    }
+
+    .right form input[type="submit"] {
+        width: 50%;
+    }
+
+    .tbl {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left,
+    .right {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .face,z
+    .tabl {
+        position: absolute;
+    }
+
+    .right form input[type="submit"] {
+        width: 40%;
+    }
+
+    .tbl {
+        flex-direction: row;
+    }
+}
